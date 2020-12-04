@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 5 5
 Title ""
 Date "2020-12-03"
 Rev "V0.1"
@@ -581,8 +581,6 @@ Text HLabel 3450 5550 2    50   Output ~ 0
 RADIO_RST
 Text HLabel 3450 5650 2    50   Input ~ 0
 RADIO_INT
-Text HLabel 1650 4150 0    50   Output ~ 0
-RADIO_CS
 Connection ~ 5900 2450
 Wire Wire Line
 	5900 2450 5950 2450
@@ -710,4 +708,10 @@ F 3 "" H 5650 3600 50  0001 C CNN
 	1    5650 3600
 	1    0    0    -1  
 $EndComp
+Text HLabel 3450 3450 2    50   Output ~ 0
+LED_DATA
+Text HLabel 3450 3550 2    50   Input ~ 0
+DEPLOY
+Text HLabel 3450 3650 2    50   BiDi ~ 0
+DS_TEMP
 $EndSCHEMATC

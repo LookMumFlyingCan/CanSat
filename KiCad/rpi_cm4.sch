@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 2 5
 Title "RPi Compute Module 4 Section"
 Date "2020-12-03"
 Rev "V0.1"
@@ -411,4 +411,6 @@ F 3 "" H 5600 4050 50  0001 C CNN
 	1    5600 4050
 	1    0    0    -1  
 $EndComp
+Text Notes 800  6250 0    50   ~ 0
+check pull ups/downs on RPi power control pins
 $EndSCHEMATC

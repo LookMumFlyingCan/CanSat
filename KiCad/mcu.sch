@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
-Title ""
+Title "STM32F4 MCU Section"
 Date "2020-12-03"
 Rev "V0.1"
 Comp "LookMumFlyingCan"
@@ -714,4 +714,8 @@ Text HLabel 3450 3550 2    50   Input ~ 0
 DEPLOY
 Text HLabel 3450 3650 2    50   BiDi ~ 0
 DS_TEMP
+Text HLabel 3450 2850 2    50   BiDi ~ 0
+RUN_PG
+Text HLabel 3450 2950 2    50   Output ~ 0
+GLOBAL_EN
 $EndSCHEMATC
