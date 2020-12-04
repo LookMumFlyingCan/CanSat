@@ -1,0 +1,414 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "RPi Compute Module 4 Section"
+Date "2020-12-03"
+Rev "V0.1"
+Comp "LookMumFlyingCan"
+Comment1 "Designed by Miłosz 'Miły' Łagan"
+Comment2 ""
+Comment3 "ESERO-Poland CanSat 2020/2021 Competition"
+Comment4 "CanSat Flight Computer PCB"
+$EndDescr
+$Comp
+L DF40C-100DS-0.4V:DF40C-100DS-0.4V(51) J?
+U 1 1 5FC974CD
+P 1650 3500
+F 0 "J?" H 1650 6167 50  0000 C CNN
+F 1 "DF40C-100DS-0.4V(51)" H 1650 6076 50  0000 C CNN
+F 2 "HRS_DF40C-100DS-0.4V(51)" H 1650 3500 50  0001 L BNN
+F 3 "" H 1650 3500 50  0001 L BNN
+F 4 "Good" H 1650 3500 50  0001 L BNN "AVAILABILITY"
+F 5 "DF40C-100DS-0.4V(51)" H 1650 3500 50  0001 L BNN "MP"
+F 6 "None" H 1650 3500 50  0001 L BNN "PACKAGE"
+F 7 "HRS" H 1650 3500 50  0001 L BNN "MF"
+F 8 "$1.36 USD" H 1650 3500 50  0001 L BNN "PRICE"
+	1    1650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L DF40C-100DS-0.4V:DF40C-100DS-0.4V(51) J?
+U 1 1 5FCA198F
+P 3600 3500
+F 0 "J?" H 3600 6167 50  0000 C CNN
+F 1 "DF40C-100DS-0.4V(51)" H 3600 6076 50  0000 C CNN
+F 2 "HRS_DF40C-100DS-0.4V(51)" H 3600 3500 50  0001 L BNN
+F 3 "" H 3600 3500 50  0001 L BNN
+F 4 "Good" H 3600 3500 50  0001 L BNN "AVAILABILITY"
+F 5 "DF40C-100DS-0.4V(51)" H 3600 3500 50  0001 L BNN "MP"
+F 6 "None" H 3600 3500 50  0001 L BNN "PACKAGE"
+F 7 "HRS" H 3600 3500 50  0001 L BNN "MF"
+F 8 "$1.36 USD" H 3600 3500 50  0001 L BNN "PRICE"
+	1    3600 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1150 1100 0    50   UnSpc ~ 0
+GND
+Text GLabel 1150 1400 0    50   UnSpc ~ 0
+GND
+Text GLabel 2150 1100 2    50   UnSpc ~ 0
+GND
+Text GLabel 2150 1400 2    50   UnSpc ~ 0
+GND
+Text GLabel 2150 1700 2    50   UnSpc ~ 0
+GND
+Text GLabel 1150 1700 0    50   UnSpc ~ 0
+GND
+Text GLabel 1150 2200 0    50   UnSpc ~ 0
+GND
+Text GLabel 1150 2700 0    50   UnSpc ~ 0
+GND
+Text GLabel 1150 3200 0    50   UnSpc ~ 0
+GND
+Text GLabel 1150 3700 0    50   UnSpc ~ 0
+GND
+Text GLabel 1150 4000 0    50   UnSpc ~ 0
+GND
+Text GLabel 1150 4600 0    50   UnSpc ~ 0
+GND
+Text GLabel 1150 4300 0    50   UnSpc ~ 0
+GND
+Text GLabel 2150 2100 2    50   UnSpc ~ 0
+GND
+Text GLabel 2150 2600 2    50   UnSpc ~ 0
+GND
+Text GLabel 2150 3100 2    50   UnSpc ~ 0
+GND
+Text GLabel 2150 3600 2    50   UnSpc ~ 0
+GND
+Text GLabel 2150 4000 2    50   UnSpc ~ 0
+GND
+Text GLabel 2150 4300 2    50   UnSpc ~ 0
+GND
+Text GLabel 2150 4700 2    50   UnSpc ~ 0
+GND
+Text GLabel 2150 5900 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 5900 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 5600 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 5300 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 5000 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 4700 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 4400 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 4100 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 3800 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 1400 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 1700 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 2000 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 2300 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 2600 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 2900 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 3200 2    50   UnSpc ~ 0
+GND
+Text GLabel 4100 3500 2    50   UnSpc ~ 0
+GND
+Text GLabel 3100 1400 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 1700 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 2000 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 2300 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 2600 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 2900 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 3800 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 4100 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 4400 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 4700 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 5000 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 5300 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 5900 0    50   UnSpc ~ 0
+GND
+Text GLabel 3100 5600 0    50   UnSpc ~ 0
+GND
+Wire Wire Line
+	850  2100 1150 2100
+Text Label 850  2100 0    50   ~ 0
+RPI_ACT
+Text HLabel 1150 3600 0    50   Input ~ 0
+RPI_RX
+Text HLabel 1150 3800 0    50   Output ~ 0
+RPI_TX
+Text GLabel 1150 4900 0    50   UnSpc ~ 0
++5V
+Text GLabel 1150 5400 0    50   UnSpc ~ 0
++5V
+Text GLabel 1150 5000 0    50   UnSpc ~ 0
++5V
+Text GLabel 1150 5100 0    50   UnSpc ~ 0
++5V
+Text GLabel 1150 5200 0    50   UnSpc ~ 0
++5V
+Text GLabel 1150 5300 0    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	800  5800 1150 5800
+Text Label 800  5800 0    50   ~ 0
+RPI_PWR
+Wire Wire Line
+	800  6000 1150 6000
+Text Label 800  6000 0    50   ~ 0
+GLOBAL_EN
+$Comp
+L Device:R R?
+U 1 1 5FCB5C35
+P 2300 5600
+F 0 "R?" V 2093 5600 50  0000 C CNN
+F 1 "220R" V 2184 5600 50  0000 C CNN
+F 2 "" V 2230 5600 50  0001 C CNN
+F 3 "~" H 2300 5600 50  0001 C CNN
+	1    2300 5600
+	0    1    1    0   
+$EndComp
+Text HLabel 2450 5600 2    50   BiDi ~ 0
+RUN_PG
+Wire Wire Line
+	2450 2200 2150 2200
+Text Label 2450 2200 2    50   ~ 0
+GPIO_26
+Wire Wire Line
+	2450 2300 2150 2300
+Wire Wire Line
+	2450 2400 2150 2400
+Wire Wire Line
+	2450 2500 2150 2500
+Wire Wire Line
+	2450 2700 2150 2700
+Text Label 2450 2300 2    50   ~ 0
+GPIO_19
+Text Label 2450 2400 2    50   ~ 0
+GPIO_13
+Text Label 2450 2500 2    50   ~ 0
+GPIO_6
+Text Label 2450 2700 2    50   ~ 0
+GPIO_5
+$Comp
+L SN74LVC1G125DBVR:SN74LVC1G125DBVR U?
+U 1 1 5FCBE30F
+P 5800 1450
+F 0 "U?" H 5800 2020 50  0000 C CNN
+F 1 "SN74LVC1G125DBVR" H 5800 1929 50  0000 C CNN
+F 2 "SOT95P280X145-5N" H 5800 1450 50  0001 L BNN
+F 3 "" H 5800 1450 50  0001 L BNN
+	1    5800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LVC1G125DBVR:SN74LVC1G125DBVR U?
+U 1 1 5FCBF4AC
+P 5800 2650
+F 0 "U?" H 5800 3220 50  0000 C CNN
+F 1 "SN74LVC1G125DBVR" H 5800 3129 50  0000 C CNN
+F 2 "SOT95P280X145-5N" H 5800 2650 50  0001 L BNN
+F 3 "" H 5800 2650 50  0001 L BNN
+	1    5800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FCC0A7C
+P 5100 1350
+F 0 "#PWR?" H 5100 1200 50  0001 C CNN
+F 1 "+3V3" H 5115 1523 50  0000 C CNN
+F 2 "" H 5100 1350 50  0001 C CNN
+F 3 "" H 5100 1350 50  0001 C CNN
+	1    5100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FCC1848
+P 6500 1150
+F 0 "#PWR?" H 6500 1000 50  0001 C CNN
+F 1 "+3V3" H 6515 1323 50  0000 C CNN
+F 2 "" H 6500 1150 50  0001 C CNN
+F 3 "" H 6500 1150 50  0001 C CNN
+	1    6500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCC22B4
+P 6500 1750
+F 0 "#PWR?" H 6500 1500 50  0001 C CNN
+F 1 "GND" H 6505 1577 50  0000 C CNN
+F 2 "" H 6500 1750 50  0001 C CNN
+F 3 "" H 6500 1750 50  0001 C CNN
+	1    6500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FCC29F4
+P 6650 1350
+F 0 "R?" V 6443 1350 50  0000 C CNN
+F 1 "70R" V 6534 1350 50  0000 C CNN
+F 2 "" V 6580 1350 50  0001 C CNN
+F 3 "~" H 6650 1350 50  0001 C CNN
+	1    6650 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 1350 6800 1350
+Wire Wire Line
+	6900 1300 6900 1350
+$Comp
+L Device:LED D?
+U 1 1 5FCC34D9
+P 6900 1150
+F 0 "D?" V 6939 1032 50  0000 R CNN
+F 1 "RPI_PWR" V 6848 1032 50  0000 R CNN
+F 2 "" H 6900 1150 50  0001 C CNN
+F 3 "~" H 6900 1150 50  0001 C CNN
+	1    6900 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FCC6BF4
+P 6900 950
+F 0 "#PWR?" H 6900 800 50  0001 C CNN
+F 1 "+3V3" H 6915 1123 50  0000 C CNN
+F 2 "" H 6900 950 50  0001 C CNN
+F 3 "" H 6900 950 50  0001 C CNN
+	1    6900 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 950  6900 1000
+Wire Wire Line
+	4750 1450 5100 1450
+Text Label 4750 1450 0    50   ~ 0
+RPI_PWR
+$Comp
+L power:GND #PWR?
+U 1 1 5FCCC90C
+P 6500 2950
+F 0 "#PWR?" H 6500 2700 50  0001 C CNN
+F 1 "GND" H 6505 2777 50  0000 C CNN
+F 2 "" H 6500 2950 50  0001 C CNN
+F 3 "" H 6500 2950 50  0001 C CNN
+	1    6500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FCCCC78
+P 6500 2350
+F 0 "#PWR?" H 6500 2200 50  0001 C CNN
+F 1 "+5V" H 6515 2523 50  0000 C CNN
+F 2 "" H 6500 2350 50  0001 C CNN
+F 3 "" H 6500 2350 50  0001 C CNN
+	1    6500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FCCD2CE
+P 5100 2550
+F 0 "#PWR?" H 5100 2400 50  0001 C CNN
+F 1 "+5V" H 5115 2723 50  0000 C CNN
+F 2 "" H 5100 2550 50  0001 C CNN
+F 3 "" H 5100 2550 50  0001 C CNN
+	1    5100 2550
+	1    0    0    -1  
+$EndComp
+Text Label 6950 2550 2    50   ~ 0
+GLOBAL_EN
+Wire Wire Line
+	6950 2550 6500 2550
+Text HLabel 5100 2650 0    50   Input ~ 0
+GLOBAL_EN
+Text Label 2850 1300 0    50   ~ 0
+USB+
+Text Label 2850 1200 0    50   ~ 0
+USB-
+Wire Wire Line
+	2850 1200 3100 1200
+Wire Wire Line
+	2850 1300 3100 1300
+Text Notes 3050 1100 2    50   ~ 0
+90R diff pair
+$Comp
+L USB_TE_1734366-1:1734366-1 P?
+U 1 1 5FD33BFA
+P 5950 3850
+F 0 "P?" H 6130 3896 50  0000 L CNN
+F 1 "USB_SDR" H 6130 3805 50  0000 L CNN
+F 2 "TE_1734366-1" H 5950 3850 50  0001 L BNN
+F 3 "" H 5950 3850 50  0001 L BNN
+F 4 "Compliant" H 5950 3850 50  0001 L BNN "EU_RoHS_Compliance"
+F 5 "4" H 5950 3850 50  0001 L BNN "Number_of_Positions"
+F 6 "2 mm[.078 in]" H 5950 3850 50  0001 L BNN "Centerline_Pitch"
+F 7 "Connector" H 5950 3850 50  0001 L BNN "Product_Type"
+F 8 "1734366-1" H 5950 3850 50  0001 L BNN "Comment"
+	1    5950 3850
+	1    0    0    -1  
+$EndComp
+Text Notes 6500 4400 2    50   ~ 0
+add ESD protection and OCP
+Wire Wire Line
+	5600 3650 5600 3700
+Wire Wire Line
+	5600 3700 5650 3700
+Wire Wire Line
+	5600 4050 5600 4000
+Wire Wire Line
+	5600 4000 5650 4000
+Text Label 5400 3800 0    50   ~ 0
+USB-
+Text Label 5400 3900 0    50   ~ 0
+USB+
+Wire Wire Line
+	5400 3800 5650 3800
+Wire Wire Line
+	5400 3900 5650 3900
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FD39F70
+P 5600 3650
+F 0 "#PWR?" H 5600 3500 50  0001 C CNN
+F 1 "+3V3" H 5615 3823 50  0000 C CNN
+F 2 "" H 5600 3650 50  0001 C CNN
+F 3 "" H 5600 3650 50  0001 C CNN
+	1    5600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD3A750
+P 5600 4050
+F 0 "#PWR?" H 5600 3800 50  0001 C CNN
+F 1 "GND" H 5605 3877 50  0000 C CNN
+F 2 "" H 5600 4050 50  0001 C CNN
+F 3 "" H 5600 4050 50  0001 C CNN
+	1    5600 4050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

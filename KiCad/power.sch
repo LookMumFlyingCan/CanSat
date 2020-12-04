@@ -1,0 +1,258 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "Power Conditioning Section"
+Date "2020-12-03"
+Rev "V0.1"
+Comp "LookMumFlyingCan"
+Comment1 "Designed by Miłosz 'Miły' Łagan"
+Comment2 ""
+Comment3 "ESERO-Poland CanSat 2020/2021 Competition"
+Comment4 "CanSat Flight Computer PCB"
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5FCCE89D
+P 3000 1250
+F 0 "R?" V 2793 1250 50  0000 C CNN
+F 1 "120R" V 2884 1250 50  0000 C CNN
+F 2 "" V 2930 1250 50  0001 C CNN
+F 3 "~" H 3000 1250 50  0001 C CNN
+	1    3000 1250
+	0    1    1    0   
+$EndComp
+Text GLabel 2750 1600 0    50   UnSpc ~ 0
++3V3
+Text GLabel 2750 1250 0    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	2750 1600 2850 1600
+Wire Wire Line
+	2750 1250 2850 1250
+Connection ~ 3650 1600
+Wire Wire Line
+	3650 1600 3450 1600
+Wire Wire Line
+	3650 1250 3650 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5FCC5254
+P 3650 1600
+F 0 "#PWR?" H 3650 1350 50  0001 C CNN
+F 1 "GND" H 3655 1427 50  0000 C CNN
+F 2 "" H 3650 1600 50  0001 C CNN
+F 3 "" H 3650 1600 50  0001 C CNN
+	1    3650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FCCEB98
+P 3000 1600
+F 0 "R?" V 2793 1600 50  0000 C CNN
+F 1 "36R" V 2884 1600 50  0000 C CNN
+F 2 "" V 2930 1600 50  0001 C CNN
+F 3 "~" H 3000 1600 50  0001 C CNN
+	1    3000 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 1250 3650 1250
+$Comp
+L Device:LED D?
+U 1 1 5FCC2F82
+P 3300 1600
+F 0 "D?" H 3293 1345 50  0000 C CNN
+F 1 "3V3" H 3293 1436 50  0000 C CNN
+F 2 "" H 3300 1600 50  0001 C CNN
+F 3 "~" H 3300 1600 50  0001 C CNN
+	1    3300 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FCC09ED
+P 3300 1250
+F 0 "D?" H 3293 995 50  0000 C CNN
+F 1 "5V" H 3293 1086 50  0000 C CNN
+F 2 "" H 3300 1250 50  0001 C CNN
+F 3 "~" H 3300 1250 50  0001 C CNN
+	1    3300 1250
+	-1   0    0    1   
+$EndComp
+Text Notes 3550 2900 2    50   ~ 0
+place near PWR connector
+Connection ~ 3450 2350
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FCB68E8
+P 3450 2350
+F 0 "#PWR?" H 3450 2200 50  0001 C CNN
+F 1 "+3.3V" H 3465 2523 50  0000 C CNN
+F 2 "" H 3450 2350 50  0001 C CNN
+F 3 "" H 3450 2350 50  0001 C CNN
+	1    3450 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5FCB553C
+P 3450 2550
+F 0 "#PWR?" H 3450 2300 50  0001 C CNN
+F 1 "GND" H 3455 2377 50  0000 C CNN
+F 2 "" H 3450 2550 50  0001 C CNN
+F 3 "" H 3450 2550 50  0001 C CNN
+	1    3450 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5FCB4F91
+P 2600 2550
+F 0 "#PWR?" H 2600 2300 50  0001 C CNN
+F 1 "GND" H 2605 2377 50  0000 C CNN
+F 2 "" H 2600 2550 50  0001 C CNN
+F 3 "" H 2600 2550 50  0001 C CNN
+	1    2600 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 2350
+$Comp
+L power:+5V #PWR?
+U 1 1 5FCB4AB5
+P 2600 2350
+F 0 "#PWR?" H 2600 2200 50  0001 C CNN
+F 1 "+5V" H 2615 2523 50  0000 C CNN
+F 2 "" H 2600 2350 50  0001 C CNN
+F 3 "" H 2600 2350 50  0001 C CNN
+	1    2600 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 2250 2    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	3450 2550 3800 2550
+Wire Wire Line
+	3450 2350 3800 2350
+Wire Wire Line
+	2600 2550 2950 2550
+Wire Wire Line
+	2600 2350 2950 2350
+$Comp
+L Device:C_Small C?
+U 1 1 5FCB2DDD
+P 3800 2450
+F 0 "C?" H 3892 2496 50  0000 L CNN
+F 1 "150u" H 3892 2405 50  0000 L CNN
+F 2 "" H 3800 2450 50  0001 C CNN
+F 3 "~" H 3800 2450 50  0001 C CNN
+	1    3800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FCB2044
+P 3450 2450
+F 0 "C?" H 3542 2496 50  0000 L CNN
+F 1 "150u" H 3542 2405 50  0000 L CNN
+F 2 "" H 3450 2450 50  0001 C CNN
+F 3 "~" H 3450 2450 50  0001 C CNN
+	1    3450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FCB146F
+P 2950 2450
+F 0 "C?" H 3042 2496 50  0000 L CNN
+F 1 "400u" H 3042 2405 50  0000 L CNN
+F 2 "" H 2950 2450 50  0001 C CNN
+F 3 "~" H 2950 2450 50  0001 C CNN
+	1    2950 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FCB0A51
+P 2600 2450
+F 0 "C?" H 2692 2496 50  0000 L CNN
+F 1 "400u" H 2692 2405 50  0000 L CNN
+F 2 "" H 2600 2450 50  0001 C CNN
+F 3 "~" H 2600 2450 50  0001 C CNN
+	1    2600 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 2550 2    50   UnSpc ~ 0
+VBAT
+Text GLabel 1600 2350 2    50   UnSpc ~ 0
++5V
+Text GLabel 1600 2450 2    50   UnSpc ~ 0
+GND
+Text GLabel 1600 2650 2    50   UnSpc ~ 0
+GND
+Text GLabel 1600 2750 2    50   UnSpc ~ 0
++3V3
+Wire Wire Line
+	1600 2750 1350 2750
+Wire Wire Line
+	1600 2650 1350 2650
+Wire Wire Line
+	1600 2550 1350 2550
+Wire Wire Line
+	1600 2450 1350 2450
+Wire Wire Line
+	1600 2350 1350 2350
+Wire Wire Line
+	1600 2250 1350 2250
+Wire Wire Line
+	1600 1150 1350 1150
+Text HLabel 1600 1650 2    50   Output ~ 0
+PWR_VALID
+Text HLabel 1600 1550 2    50   Output ~ 0
+PWR_WARN
+Text HLabel 1600 1450 2    50   Output ~ 0
+PWR_CRITICAL
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 5FCAB8A7
+P 1150 1350
+F 0 "J?" H 1258 1731 50  0000 C CNN
+F 1 "PSU_CTRL" H 1258 1640 50  0000 C CNN
+F 2 "" H 1150 1350 50  0001 C CNN
+F 3 "~" H 1150 1350 50  0001 C CNN
+	1    1150 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 1350 2    50   UnSpc ~ 0
+GND
+Text HLabel 1600 1250 2    50   Input ~ 0
+SCL
+Text HLabel 1600 1150 2    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	1600 1650 1350 1650
+Wire Wire Line
+	1600 1550 1350 1550
+Wire Wire Line
+	1600 1450 1350 1450
+Wire Wire Line
+	1600 1350 1350 1350
+Wire Wire Line
+	1600 1250 1350 1250
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 5FCAA2E0
+P 1150 2450
+F 0 "J?" H 1258 2831 50  0000 C CNN
+F 1 "POWER" H 1258 2740 50  0000 C CNN
+F 2 "" H 1150 2450 50  0001 C CNN
+F 3 "~" H 1150 2450 50  0001 C CNN
+	1    1150 2450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
