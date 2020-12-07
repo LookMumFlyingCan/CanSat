@@ -454,8 +454,6 @@ Text Label 7200 3800 0    50   ~ 0
 SD_DAT1
 Text Label 7200 3900 0    50   ~ 0
 SD_DAT2
-Text Label 3800 5950 2    50   ~ 0
-SD_DAT0
 Wire Wire Line
 	3450 5950 3800 5950
 Wire Wire Line
@@ -660,152 +658,18 @@ PWR_VALID
 NoConn ~ 7500 4300
 NoConn ~ 2250 1450
 Wire Wire Line
-	7400 4500 7400 4400
-Wire Wire Line
-	7400 4400 7500 4400
-$Comp
-L Device:R_Small R25
-U 1 1 5FCF20B5
-P 7050 4350
-F 0 "R25" H 7109 4396 50  0000 L CNN
-F 1 "47k" H 7109 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7050 4350 50  0001 C CNN
-F 3 "~" H 7050 4350 50  0001 C CNN
-	1    7050 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7050 4450 7050 4500
-Connection ~ 7050 4500
-Wire Wire Line
-	7050 4500 7400 4500
-$Comp
-L Device:R_Small R24
-U 1 1 5FCF6430
-P 6800 4350
-F 0 "R24" H 6859 4396 50  0000 L CNN
-F 1 "47k" H 6859 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6800 4350 50  0001 C CNN
-F 3 "~" H 6800 4350 50  0001 C CNN
-	1    6800 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 4450 6800 4500
-$Comp
-L Device:R_Small R23
-U 1 1 5FCF8F30
-P 6550 4350
-F 0 "R23" H 6609 4396 50  0000 L CNN
-F 1 "47k" H 6609 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6550 4350 50  0001 C CNN
-F 3 "~" H 6550 4350 50  0001 C CNN
-	1    6550 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 4450 6550 4500
-$Comp
-L Device:R_Small R22
-U 1 1 5FCFBB74
-P 6300 4350
-F 0 "R22" H 6359 4396 50  0000 L CNN
-F 1 "47k" H 6359 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6300 4350 50  0001 C CNN
-F 3 "~" H 6300 4350 50  0001 C CNN
-	1    6300 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 4450 6300 4500
-Connection ~ 6800 4500
-Wire Wire Line
-	6800 4500 7050 4500
-Connection ~ 6550 4500
-Wire Wire Line
-	6550 4500 6800 4500
-$Comp
-L Device:R_Small R20
-U 1 1 5FCFF123
-P 6050 4350
-F 0 "R20" H 6109 4396 50  0000 L CNN
-F 1 "47k" H 6109 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6050 4350 50  0001 C CNN
-F 3 "~" H 6050 4350 50  0001 C CNN
-	1    6050 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 4450 6050 4500
-$Comp
-L Device:R_Small R16
-U 1 1 5FD01F7B
-P 5800 4350
-F 0 "R16" H 5859 4396 50  0000 L CNN
-F 1 "47k" H 5859 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5800 4350 50  0001 C CNN
-F 3 "~" H 5800 4350 50  0001 C CNN
-	1    5800 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 4450 5800 4500
-Wire Wire Line
-	5800 4500 6050 4500
-Connection ~ 6050 4500
-Wire Wire Line
-	6050 4500 6300 4500
-Connection ~ 6300 4500
-Wire Wire Line
-	6300 4500 6550 4500
-Wire Wire Line
-	7050 4200 7050 4250
-Wire Wire Line
 	7050 4200 7500 4200
-Wire Wire Line
-	6800 4100 6800 4250
-Wire Wire Line
-	6800 4100 7500 4100
-Wire Wire Line
-	6550 4000 6550 4250
-Wire Wire Line
-	6550 4000 7500 4000
-Wire Wire Line
-	6300 3900 6300 4250
-Wire Wire Line
-	6300 3900 7500 3900
-Wire Wire Line
-	6050 3800 6050 4250
-Wire Wire Line
-	6050 3800 7500 3800
-Wire Wire Line
-	5800 3700 5800 4250
-Wire Wire Line
-	5800 3700 7500 3700
 $Comp
 L Device:C_Small C22
 U 1 1 5FD49E73
-P 9250 4100
-F 0 "C22" H 9342 4146 50  0000 L CNN
-F 1 "100n" H 9342 4055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9250 4100 50  0001 C CNN
-F 3 "~" H 9250 4100 50  0001 C CNN
-	1    9250 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C21
-U 1 1 5FD49E79
 P 8900 4100
-F 0 "C21" H 8988 4146 50  0000 L CNN
-F 1 "10u" H 8988 4055 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 8900 4100 50  0001 C CNN
+F 0 "C22" H 8992 4146 50  0000 L CNN
+F 1 "100n" H 8992 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8900 4100 50  0001 C CNN
 F 3 "~" H 8900 4100 50  0001 C CNN
 	1    8900 4100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8900 4000 9250 4000
 $Comp
 L power:GND #PWR0139
 U 1 1 5FD5D644
@@ -819,23 +683,17 @@ F 3 "" H 8900 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 4200 8900 4250
-Wire Wire Line
-	8900 4200 9250 4200
-Connection ~ 8900 4200
 $Comp
 L power:+3V3 #PWR0140
 U 1 1 5FD77515
-P 5600 4500
-F 0 "#PWR0140" H 5600 4350 50  0001 C CNN
-F 1 "+3V3" H 5615 4673 50  0000 C CNN
-F 2 "" H 5600 4500 50  0001 C CNN
-F 3 "" H 5600 4500 50  0001 C CNN
-	1    5600 4500
+P 6350 4550
+F 0 "#PWR0140" H 6350 4400 50  0001 C CNN
+F 1 "+3V3" H 6365 4723 50  0000 C CNN
+F 2 "" H 6350 4550 50  0001 C CNN
+F 3 "" H 6350 4550 50  0001 C CNN
+	1    6350 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5600 4500 5800 4500
-Connection ~ 5800 4500
 $Comp
 L power:+3V3 #PWR0141
 U 1 1 5FD85198
@@ -849,7 +707,6 @@ F 3 "" H 8900 4000 50  0001 C CNN
 $EndComp
 Text Notes 8800 4550 0    50   ~ 0
 place near SD card
-Connection ~ 8900 4000
 Text HLabel 1650 4550 0    50   BiDi ~ 0
 GPIO_2
 Text HLabel 1650 4950 0    50   BiDi ~ 0
@@ -1259,4 +1116,50 @@ Wire Wire Line
 Wire Wire Line
 	5650 2550 5650 2600
 Connection ~ 5650 2600
+Text Label 3800 5950 2    50   ~ 0
+SD_DAT0
+$Comp
+L Device:R_Network06 RN1
+U 1 1 5FDD3900
+P 6750 4400
+F 0 "RN1" H 6370 4354 50  0000 R CNN
+F 1 "47k" H 6370 4445 50  0000 R CNN
+F 2 "Resistor_THT:R_Array_SIP7" V 7125 4400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6750 4400 50  0001 C CNN
+	1    6750 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 4100 6950 4100
+Wire Wire Line
+	6950 4100 6950 4200
+Wire Wire Line
+	7500 4000 6850 4000
+Wire Wire Line
+	6850 4000 6850 4200
+Wire Wire Line
+	7500 3900 6750 3900
+Wire Wire Line
+	6750 3900 6750 4200
+Wire Wire Line
+	7500 3800 6650 3800
+Wire Wire Line
+	6650 3800 6650 4200
+Wire Wire Line
+	7500 3700 6550 3700
+Wire Wire Line
+	6550 3700 6550 4200
+Wire Wire Line
+	6350 4550 6350 4650
+Wire Wire Line
+	6350 4650 7050 4650
+Wire Wire Line
+	7050 4650 7050 4600
+Wire Wire Line
+	7500 4400 7350 4400
+Wire Wire Line
+	7350 4400 7350 4650
+Wire Wire Line
+	7350 4650 7050 4650
+Connection ~ 7050 4650
 $EndSCHEMATC
