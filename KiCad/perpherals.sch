@@ -283,9 +283,9 @@ F 3 "~" H 2250 3050 50  0001 C CNN
 	1    2250 3050
 	0    1    1    0   
 $EndComp
-Text HLabel 2250 3200 3    50   Input ~ 0
+Text HLabel 1950 3200 3    50   Input ~ 0
 SCL
-Text HLabel 1950 3200 3    50   BiDi ~ 0
+Text HLabel 2250 3200 3    50   BiDi ~ 0
 SDA
 Text Notes 1700 3500 0    50   ~ 0
 optional compass i2c bus
@@ -699,81 +699,94 @@ $EndComp
 Wire Wire Line
 	6350 1650 6350 1600
 Connection ~ 6350 1600
-$Comp
-L Connector:Conn_01x02_Male J8
-U 1 1 60189EFB
-P 6500 1500
-F 0 "J8" H 6608 1681 50  0000 C CNN
-F 1 "GND" H 6608 1590 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6500 1500 50  0001 C CNN
-F 3 "~" H 6500 1500 50  0001 C CNN
-	1    6500 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 1500 6750 1500
-Wire Wire Line
-	6750 1500 6750 1600
-Wire Wire Line
-	6750 1600 6700 1600
-$Comp
-L power:GND #PWR0120
-U 1 1 60189F04
-P 6750 1650
-F 0 "#PWR0120" H 6750 1400 50  0001 C CNN
-F 1 "GND" H 6755 1477 50  0000 C CNN
-F 2 "" H 6750 1650 50  0001 C CNN
-F 3 "" H 6750 1650 50  0001 C CNN
-	1    6750 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 1650 6750 1600
-Connection ~ 6750 1600
-Text Notes 5550 1250 0    50   ~ 0
+Text Notes 5350 1250 0    50   ~ 0
 RF board mechanical/GND connectors
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 602102E8
-P 2100 7000
-F 0 "H1" H 2200 7046 50  0000 L CNN
-F 1 "MountingHole" H 2200 6955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2100 7000 50  0001 C CNN
-F 3 "~" H 2100 7000 50  0001 C CNN
-	1    2100 7000
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FE37D1F
+P 2100 6850
+F 0 "H1" H 2200 6899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2200 6808 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 2100 6850 50  0001 C CNN
+F 3 "~" H 2100 6850 50  0001 C CNN
+	1    2100 6850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
-U 1 1 602113EA
-P 3050 7000
-F 0 "H2" H 3150 7046 50  0000 L CNN
-F 1 "MountingHole" H 3150 6955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 3050 7000 50  0001 C CNN
-F 3 "~" H 3050 7000 50  0001 C CNN
-	1    3050 7000
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FE3856E
+P 3050 6850
+F 0 "H2" H 3150 6899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3150 6808 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 3050 6850 50  0001 C CNN
+F 3 "~" H 3050 6850 50  0001 C CNN
+	1    3050 6850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
-U 1 1 602191CF
-P 4000 7000
-F 0 "H3" H 4100 7046 50  0000 L CNN
-F 1 "MountingHole" H 4100 6955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4000 7000 50  0001 C CNN
-F 3 "~" H 4000 7000 50  0001 C CNN
-	1    4000 7000
+L Mechanical:MountingHole_Pad H3
+U 1 1 5FE397C2
+P 4000 6850
+F 0 "H3" H 4100 6899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4100 6808 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 4000 6850 50  0001 C CNN
+F 3 "~" H 4000 6850 50  0001 C CNN
+	1    4000 6850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
-U 1 1 602191D5
-P 4950 7000
-F 0 "H4" H 5050 7046 50  0000 L CNN
-F 1 "MountingHole" H 5050 6955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4950 7000 50  0001 C CNN
-F 3 "~" H 4950 7000 50  0001 C CNN
-	1    4950 7000
+L Mechanical:MountingHole_Pad H4
+U 1 1 5FE3A96E
+P 4950 6850
+F 0 "H4" H 5050 6899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5050 6808 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 4950 6850 50  0001 C CNN
+F 3 "~" H 4950 6850 50  0001 C CNN
+	1    4950 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5FE3E34B
+P 2100 6950
+F 0 "#PWR0120" H 2100 6700 50  0001 C CNN
+F 1 "GND" H 2105 6777 50  0000 C CNN
+F 2 "" H 2100 6950 50  0001 C CNN
+F 3 "" H 2100 6950 50  0001 C CNN
+	1    2100 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5FE3EBD3
+P 3050 6950
+F 0 "#PWR0122" H 3050 6700 50  0001 C CNN
+F 1 "GND" H 3055 6777 50  0000 C CNN
+F 2 "" H 3050 6950 50  0001 C CNN
+F 3 "" H 3050 6950 50  0001 C CNN
+	1    3050 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5FE3F02C
+P 4000 6950
+F 0 "#PWR0123" H 4000 6700 50  0001 C CNN
+F 1 "GND" H 4005 6777 50  0000 C CNN
+F 2 "" H 4000 6950 50  0001 C CNN
+F 3 "" H 4000 6950 50  0001 C CNN
+	1    4000 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5FE3F49B
+P 4950 6950
+F 0 "#PWR0124" H 4950 6700 50  0001 C CNN
+F 1 "GND" H 4955 6777 50  0000 C CNN
+F 2 "" H 4950 6950 50  0001 C CNN
+F 3 "" H 4950 6950 50  0001 C CNN
+	1    4950 6950
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -14,17 +14,6 @@ Comment3 "ESERO-Poland CanSat 2020/2021 Competition"
 Comment4 "CanSat Flight Computer PCB"
 $EndDescr
 $Comp
-L MCU_ST_STM32F4:STM32F407VGTx U3
-U 1 1 5FCFB0B5
-P 2550 4150
-F 0 "U3" H 2900 1500 50  0000 C CNN
-F 1 "STM32F407VGTx" H 3150 1400 50  0000 C CNN
-F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 1850 1550 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 2550 4150 50  0001 C CNN
-	1    2550 4150
-	1    0    0    -1  
-$EndComp
-$Comp
 L MOLEX_SD_473521001:47352-1001 J14
 U 1 1 5FD3EAD0
 P 8000 4200
@@ -153,8 +142,6 @@ Wire Wire Line
 Connection ~ 2350 1400
 Text Label 2350 1200 3    50   ~ 0
 VDD
-Wire Wire Line
-	2350 1200 2350 1400
 Text Label 2950 1200 3    50   ~ 0
 VDDA
 Wire Wire Line
@@ -493,33 +480,32 @@ RADIO_MOSI
 $Comp
 L Device:R_Small R14
 U 1 1 5FE292F5
-P 4000 4000
-F 0 "R14" H 4059 4046 50  0000 L CNN
-F 1 "4k7" H 4059 3955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4000 4000 50  0001 C CNN
-F 3 "~" H 4000 4000 50  0001 C CNN
-	1    4000 4000
+P 4150 4100
+F 0 "R14" H 4209 4146 50  0000 L CNN
+F 1 "4k7" H 4209 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 4100 50  0001 C CNN
+F 3 "~" H 4150 4100 50  0001 C CNN
+	1    4150 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 3900 3750 3900
+	4150 4000 3900 4000
 Wire Wire Line
-	4000 3850 4000 3900
-Connection ~ 4000 3900
+	4150 3950 4150 4000
 $Comp
 L power:+3V3 #PWR0134
 U 1 1 5FE2EDA2
-P 4000 3850
-F 0 "#PWR0134" H 4000 3700 50  0001 C CNN
-F 1 "+3V3" H 4015 4023 50  0000 C CNN
-F 2 "" H 4000 3850 50  0001 C CNN
-F 3 "" H 4000 3850 50  0001 C CNN
-	1    4000 3850
+P 4150 3950
+F 0 "#PWR0134" H 4150 3800 50  0001 C CNN
+F 1 "+3V3" H 4165 4123 50  0000 C CNN
+F 2 "" H 4150 3950 50  0001 C CNN
+F 3 "" H 4150 3950 50  0001 C CNN
+	1    4150 3950
 	1    0    0    -1  
 $EndComp
-Text HLabel 4200 4150 2    50   BiDi ~ 0
+Text HLabel 4350 4350 2    50   BiDi ~ 0
 SDA
-Text HLabel 4200 4250 2    50   Output ~ 0
+Text HLabel 4350 4250 2    50   Output ~ 0
 SCL
 Text HLabel 3450 2150 2    50   Output ~ 0
 RADIO_NSS
@@ -639,22 +625,16 @@ F 3 "" H 7750 2350 50  0001 C CNN
 	1    7750 2350
 	1    0    0    -1  
 $EndComp
-Text HLabel 3450 3450 2    50   Output ~ 0
+Text HLabel 3450 5350 2    50   Output ~ 0
 LED_DATA
-Text HLabel 3450 3550 2    50   Input ~ 0
+Text HLabel 1650 4650 0    50   Input ~ 0
 DEPLOY
-Text HLabel 3450 3650 2    50   BiDi ~ 0
+Text HLabel 1650 4750 0    50   BiDi ~ 0
 DS_TEMP
-Text HLabel 3450 2850 2    50   BiDi ~ 0
+Text HLabel 1650 4050 0    50   BiDi ~ 0
 RUN_PG
-Text HLabel 3450 2950 2    50   Output ~ 0
+Text HLabel 1650 3950 0    50   Output ~ 0
 GLOBAL_EN
-Text HLabel 1650 3650 0    50   Input ~ 0
-PWR_CRITICAL
-Text HLabel 1650 3750 0    50   Input ~ 0
-PWR_WARN
-Text HLabel 1650 3850 0    50   Input ~ 0
-PWR_VALID
 NoConn ~ 7500 4300
 NoConn ~ 2250 1450
 Wire Wire Line
@@ -707,59 +687,49 @@ F 3 "" H 8900 4000 50  0001 C CNN
 $EndComp
 Text Notes 8800 4550 0    50   ~ 0
 place near SD card
-Text HLabel 1650 4550 0    50   BiDi ~ 0
+Text HLabel 1650 3650 0    50   BiDi ~ 0
 GPIO_2
-Text HLabel 1650 4950 0    50   BiDi ~ 0
+Text HLabel 1650 3850 0    50   BiDi ~ 0
 GPIO_3
 Wire Wire Line
-	4000 4100 4000 4150
-Connection ~ 4000 4150
+	4150 4200 4150 4250
+Connection ~ 4150 4250
 Wire Wire Line
-	4000 4150 4200 4150
+	4150 4250 4350 4250
 $Comp
 L Device:R_Small R13
 U 1 1 5FE2024B
-P 3750 4000
-F 0 "R13" H 3809 4046 50  0000 L CNN
-F 1 "4k7" H 3809 3955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3750 4000 50  0001 C CNN
-F 3 "~" H 3750 4000 50  0001 C CNN
-	1    3750 4000
+P 3900 4100
+F 0 "R13" H 3959 4146 50  0000 L CNN
+F 1 "4k7" H 3959 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3900 4100 50  0001 C CNN
+F 3 "~" H 3900 4100 50  0001 C CNN
+	1    3900 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 4100 3750 4250
-Connection ~ 3750 4250
+	3900 4200 3900 4350
+Connection ~ 3900 4350
 Wire Wire Line
-	3750 4250 4200 4250
-Wire Wire Line
-	3450 4150 4000 4150
-Wire Wire Line
-	3450 4250 3750 4250
+	3900 4350 4350 4350
 NoConn ~ 3450 1750
 NoConn ~ 3450 1850
 NoConn ~ 3450 2550
 NoConn ~ 3450 3250
 NoConn ~ 1650 3450
 NoConn ~ 1650 3550
-NoConn ~ 1650 3950
-NoConn ~ 1650 4050
-NoConn ~ 1650 4150
-NoConn ~ 1650 4250
-NoConn ~ 1650 4350
+NoConn ~ 3450 2950
+NoConn ~ 1650 4550
+NoConn ~ 1650 3750
+NoConn ~ 1650 4950
 NoConn ~ 1650 4450
-NoConn ~ 1650 4650
-NoConn ~ 1650 4750
 NoConn ~ 1650 4850
 NoConn ~ 3450 3850
-NoConn ~ 3450 3950
 NoConn ~ 3450 4050
-NoConn ~ 3450 4350
 NoConn ~ 3450 4450
 NoConn ~ 3450 4550
 NoConn ~ 3450 4650
 NoConn ~ 3450 4950
-NoConn ~ 3450 5350
 NoConn ~ 3450 5450
 NoConn ~ 3450 5750
 NoConn ~ 3450 5850
@@ -806,14 +776,14 @@ Text Label 3750 3750 2    50   ~ 0
 SWO
 Wire Wire Line
 	3750 3750 3450 3750
-Text Label 3750 5150 2    50   ~ 0
+Text Label 3750 3950 2    50   ~ 0
 LED1
-Text Label 3750 5250 2    50   ~ 0
+Text Label 3750 4150 2    50   ~ 0
 LED2
 Wire Wire Line
-	3750 5150 3450 5150
+	3750 3950 3450 3950
 Wire Wire Line
-	3750 5250 3450 5250
+	3750 4150 3450 4150
 $Comp
 L Device:R R?
 U 1 1 5FF3A46C
@@ -1173,4 +1143,34 @@ Wire Wire Line
 	5750 5850 5750 5750
 Wire Wire Line
 	5750 5750 5850 5750
+Wire Wire Line
+	2350 1200 2350 1400
+Text HLabel 1650 4150 0    50   Input ~ 0
+PWR_VALID
+Text HLabel 1650 4250 0    50   Input ~ 0
+PWR_WARN
+Text HLabel 1650 4350 0    50   Input ~ 0
+PWR_CRITICAL
+$Comp
+L MCU_ST_STM32F4:STM32F407VGTx U3
+U 1 1 5FCFB0B5
+P 2550 4150
+F 0 "U3" H 2900 1500 50  0000 C CNN
+F 1 "STM32F407VGTx" H 3150 1400 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 1850 1550 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 2550 4150 50  0001 C CNN
+	1    2550 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 4000
+Wire Wire Line
+	3450 4250 4150 4250
+Wire Wire Line
+	3450 4350 3900 4350
+NoConn ~ 3450 3550
+NoConn ~ 3450 3650
+NoConn ~ 3450 5150
+NoConn ~ 3450 5250
+NoConn ~ 3450 3450
+NoConn ~ 3450 2850
 $EndSCHEMATC

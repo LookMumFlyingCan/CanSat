@@ -4,4 +4,5 @@
   (lib (name DS18B20U)(type Legacy)(uri D:/Projekty/Repos/CanSat/Libs/DS18B20U_.lib)(options "")(descr ""))
   (lib (name USB_TE_1734366-1)(type Legacy)(uri D:/Projekty/Repos/CanSat/Libs/1734366-1.lib)(options "")(descr ""))
   (lib (name MOLEX_SD_473521001)(type Legacy)(uri D:/Projekty/Repos/CanSat/Libs/47352-1001.lib)(options "")(descr ""))
+  (lib (name SN74LVC1G125DCKT)(type Legacy)(uri D:/Projekty/Repos/CanSat/Libs/SN74LVC1G125DCKT.lib)(options "")(descr ""))
 )
