@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title "RPi Compute Module 4 Section"
-Date "2020-12-03"
-Rev "V0.1"
+Date "2020-12-09"
+Rev "V1.0"
 Comp "LookMumFlyingCan"
 Comment1 "Designed by Miłosz 'Miły' Łagan"
 Comment2 ""

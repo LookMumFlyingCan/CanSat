@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 5 5
 Title "Peripherals and Connectors Section"
-Date "2020-12-03"
-Rev "V0.1"
+Date "2020-12-09"
+Rev "V1.0"
 Comp "LookMumFlyingCan"
 Comment1 "Designed by Miłosz 'Miły' Łagan"
 Comment2 ""
@@ -283,9 +283,9 @@ F 3 "~" H 2250 3050 50  0001 C CNN
 	1    2250 3050
 	0    1    1    0   
 $EndComp
-Text HLabel 2250 3200 3    50   Input ~ 0
+Text HLabel 1950 3200 3    50   Input ~ 0
 SCL
-Text HLabel 1950 3200 3    50   BiDi ~ 0
+Text HLabel 2250 3200 3    50   BiDi ~ 0
 SDA
 Text Notes 1700 3500 0    50   ~ 0
 optional compass i2c bus

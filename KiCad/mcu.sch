@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 5
 Title "STM32F4 MCU Section"
-Date "2020-12-03"
-Rev "V0.1"
+Date "2020-12-09"
+Rev "V1.0"
 Comp "LookMumFlyingCan"
 Comment1 "Designed by Miłosz 'Miły' Łagan"
 Comment2 ""
@@ -713,7 +713,6 @@ Connection ~ 3900 4350
 Wire Wire Line
 	3900 4350 4350 4350
 NoConn ~ 3450 1750
-NoConn ~ 3450 1850
 NoConn ~ 3450 2550
 NoConn ~ 3450 3250
 NoConn ~ 1650 3450
@@ -1173,4 +1172,5 @@ NoConn ~ 3450 5150
 NoConn ~ 3450 5250
 NoConn ~ 3450 3450
 NoConn ~ 3450 2850
+NoConn ~ 3450 1850
 $EndSCHEMATC
