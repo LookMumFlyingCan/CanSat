@@ -718,7 +718,6 @@ NoConn ~ 3450 3250
 NoConn ~ 1650 3450
 NoConn ~ 1650 3550
 NoConn ~ 3450 2950
-NoConn ~ 1650 4550
 NoConn ~ 1650 3750
 NoConn ~ 1650 4950
 NoConn ~ 1650 4450
@@ -1172,5 +1171,8 @@ NoConn ~ 3450 5150
 NoConn ~ 3450 5250
 NoConn ~ 3450 3450
 NoConn ~ 3450 2850
-NoConn ~ 3450 1850
+Text HLabel 3450 1850 2    50   Output ~ 0
+BUZZER
+Text HLabel 1650 4550 0    50   Input ~ 0
+BUTTON
 $EndSCHEMATC
