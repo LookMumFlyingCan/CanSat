@@ -108,40 +108,29 @@ Wire Wire Line
 Wire Wire Line
 	1600 2250 1350 2250
 Wire Wire Line
-	1600 1150 1350 1150
-Text HLabel 1600 1650 2    50   Output ~ 0
+	1575 1150 1325 1150
+Text HLabel 1325 1650 0    50   Output ~ 0
 PWR_VALID
-Text HLabel 1600 1550 2    50   Output ~ 0
+Text HLabel 1325 1550 0    50   Output ~ 0
 PWR_WARN
-Text HLabel 1600 1450 2    50   Output ~ 0
+Text HLabel 1325 1450 0    50   Output ~ 0
 PWR_CRITICAL
-$Comp
-L Connector:Conn_01x06_Male J11
-U 1 1 5FCAB8A7
-P 1150 1350
-F 0 "J11" H 1258 1731 50  0000 C CNN
-F 1 "PSU_CTRL" H 1258 1640 50  0000 C CNN
-F 2 "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical" H 1150 1350 50  0001 C CNN
-F 3 "~" H 1150 1350 50  0001 C CNN
-	1    1150 1350
-	1    0    0    -1  
-$EndComp
-Text GLabel 1600 1350 2    50   UnSpc ~ 0
+Text GLabel 1325 1350 0    50   UnSpc ~ 0
 GND
-Text HLabel 1600 1250 2    50   Input ~ 0
+Text HLabel 1325 1250 0    50   Input ~ 0
 SCL
-Text HLabel 1600 1150 2    50   BiDi ~ 0
+Text HLabel 1325 1150 0    50   BiDi ~ 0
 SDA
 Wire Wire Line
-	1600 1650 1350 1650
+	1575 1650 1325 1650
 Wire Wire Line
-	1600 1550 1350 1550
+	1575 1550 1325 1550
 Wire Wire Line
-	1600 1450 1350 1450
+	1575 1450 1325 1450
 Wire Wire Line
-	1600 1350 1350 1350
+	1575 1350 1325 1350
 Wire Wire Line
-	1600 1250 1350 1250
+	1575 1250 1325 1250
 $Comp
 L Connector:Conn_01x06_Male J12
 U 1 1 5FCAA2E0
@@ -152,5 +141,16 @@ F 2 "Connector_JST:JST_PH_S6B-PH-K_1x06_P2.00mm_Horizontal" H 1150 2450 50  0001
 F 3 "~" H 1150 2450 50  0001 C CNN
 	1    1150 2450
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J11
+U 1 1 5FCAB8A7
+P 1775 1450
+F 0 "J11" H 1883 1831 50  0000 C CNN
+F 1 "PSU_CTRL" H 1883 1740 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal" H 1775 1450 50  0001 C CNN
+F 3 "~" H 1775 1450 50  0001 C CNN
+	1    1775 1450
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
