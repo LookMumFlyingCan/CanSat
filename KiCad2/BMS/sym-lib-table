@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name eec)(type Legacy)(uri D:/Projekty/Repos/CanSat/Libs/eec.lib)(options "")(descr ""))
+  (lib (name BQ29732DSET)(type Legacy)(uri D:/Projekty/Repos/CanSat/Libs/BQ29732DSET.lib)(options "")(descr ""))
+  (lib (name CSD16406Q3)(type Legacy)(uri D:/Projekty/Repos/CanSat/Libs/CSD16406Q3.lib)(options "")(descr ""))
+  (lib (name LTM4622)(type Legacy)(uri D:/Projekty/Repos/CanSat/Libs/LTM4622AIY.lib)(options "")(descr ""))
+  (lib (name INA3221)(type Legacy)(uri D:/Projekty/Repos/CanSat/Libs/INA3221AIRGVR.lib)(options "")(descr ""))
+)

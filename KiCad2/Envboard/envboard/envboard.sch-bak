@@ -1,0 +1,287 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Temperature:DS18B20U U1
+U 1 1 5FD8F7E5
+P 1650 1425
+F 0 "U1" H 1306 1471 50  0000 R CNN
+F 1 "DS18B20U" H 1306 1380 50  0000 R CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 700 1175 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 1500 1675 50  0001 C CNN
+	1    1650 1425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Pressure:BMP280 U2
+U 1 1 5FD90124
+P 1700 2750
+F 0 "U2" H 1930 2846 50  0000 L CNN
+F 1 "BMP280" H 1930 2755 50  0000 L CNN
+F 2 "Package_LGA:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering" H 1700 2050 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf" H 1700 2750 50  0001 C CNN
+	1    1700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5FD922A2
+P 1725 3900
+F 0 "SW1" H 1725 4185 50  0000 C CNN
+F 1 "SW_Push" H 1725 4094 50  0000 C CNN
+F 2 "" H 1725 4100 50  0001 C CNN
+F 3 "~" H 1725 4100 50  0001 C CNN
+	1    1725 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5FD93A6F
+P 1650 1725
+F 0 "#PWR04" H 1650 1475 50  0001 C CNN
+F 1 "GND" H 1655 1552 50  0000 C CNN
+F 2 "" H 1650 1725 50  0001 C CNN
+F 3 "" H 1650 1725 50  0001 C CNN
+	1    1650 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5FD945A6
+P 1650 1125
+F 0 "#PWR03" H 1650 975 50  0001 C CNN
+F 1 "+3V3" H 1665 1298 50  0000 C CNN
+F 2 "" H 1650 1125 50  0001 C CNN
+F 3 "" H 1650 1125 50  0001 C CNN
+	1    1650 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR05
+U 1 1 5FD96599
+P 1700 2250
+F 0 "#PWR05" H 1700 2100 50  0001 C CNN
+F 1 "+3V3" H 1715 2423 50  0000 C CNN
+F 2 "" H 1700 2250 50  0001 C CNN
+F 3 "" H 1700 2250 50  0001 C CNN
+	1    1700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5FD970A9
+P 1800 3150
+F 0 "#PWR06" H 1800 2900 50  0001 C CNN
+F 1 "GND" H 1805 2977 50  0000 C CNN
+F 2 "" H 1800 3150 50  0001 C CNN
+F 3 "" H 1800 3150 50  0001 C CNN
+	1    1800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3050 1700 3100
+Wire Wire Line
+	1700 3100 1800 3100
+Wire Wire Line
+	1800 3100 1800 3050
+Wire Wire Line
+	1800 3150 1800 3100
+Connection ~ 1800 3100
+Wire Wire Line
+	1700 2350 1700 2300
+Wire Wire Line
+	1700 2300 1800 2300
+Wire Wire Line
+	1800 2300 1800 2350
+Wire Wire Line
+	1700 2300 1700 2250
+Connection ~ 1700 2300
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5FD9CCF4
+P 1075 2925
+F 0 "#PWR01" H 1075 2775 50  0001 C CNN
+F 1 "+3V3" H 1090 3098 50  0000 C CNN
+F 2 "" H 1075 2925 50  0001 C CNN
+F 3 "" H 1075 2925 50  0001 C CNN
+	1    1075 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2750 1250 2750
+Wire Wire Line
+	1250 2750 1250 2850
+Wire Wire Line
+	1250 2850 1300 2850
+Wire Wire Line
+	1250 2850 1250 2950
+Wire Wire Line
+	1250 2950 1075 2950
+Wire Wire Line
+	1075 2950 1075 2925
+Connection ~ 1250 2850
+$Comp
+L power:+3V3 #PWR07
+U 1 1 5FDA08E5
+P 2400 2525
+F 0 "#PWR07" H 2400 2375 50  0001 C CNN
+F 1 "+3V3" H 2415 2698 50  0000 C CNN
+F 2 "" H 2400 2525 50  0001 C CNN
+F 3 "" H 2400 2525 50  0001 C CNN
+	1    2400 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5FDA171E
+P 2400 2825
+F 0 "#PWR08" H 2400 2575 50  0001 C CNN
+F 1 "GND" H 2405 2652 50  0000 C CNN
+F 2 "" H 2400 2825 50  0001 C CNN
+F 3 "" H 2400 2825 50  0001 C CNN
+	1    2400 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5FDA1F1C
+P 2400 2675
+F 0 "C1" H 2492 2721 50  0000 L CNN
+F 1 "100n" H 2492 2630 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2400 2675 50  0001 C CNN
+F 3 "~" H 2400 2675 50  0001 C CNN
+	1    2400 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5FDA359B
+P 2750 2675
+F 0 "C2" H 2842 2721 50  0000 L CNN
+F 1 "100n" H 2842 2630 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2750 2675 50  0001 C CNN
+F 3 "~" H 2750 2675 50  0001 C CNN
+	1    2750 2675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2775 2750 2775
+Wire Wire Line
+	2750 2575 2400 2575
+Wire Wire Line
+	2400 2825 2400 2775
+Connection ~ 2400 2775
+Wire Wire Line
+	2400 2525 2400 2575
+Connection ~ 2400 2575
+Wire Wire Line
+	1125 2650 1300 2650
+Wire Wire Line
+	1125 2550 1300 2550
+Text GLabel 1125 2550 0    50   Input ~ 0
+SCL
+Text GLabel 1125 2650 0    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	2050 1425 1950 1425
+Text GLabel 2050 1425 2    50   BiDi ~ 0
+TEMP
+$Comp
+L power:+3V3 #PWR02
+U 1 1 5FDB85CB
+P 1425 3850
+F 0 "#PWR02" H 1425 3700 50  0001 C CNN
+F 1 "+3V3" H 1440 4023 50  0000 C CNN
+F 2 "" H 1425 3850 50  0001 C CNN
+F 3 "" H 1425 3850 50  0001 C CNN
+	1    1425 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1425 3850 1425 3900
+Wire Wire Line
+	1425 3900 1525 3900
+Text GLabel 2000 3900 2    50   Output ~ 0
+BUTTON
+Wire Wire Line
+	1925 3900 2000 3900
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5FDC9812
+P 1575 4600
+F 0 "J1" H 1683 4981 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 1683 4890 50  0000 C CNN
+F 2 "" H 1575 4600 50  0001 C CNN
+F 3 "~" H 1575 4600 50  0001 C CNN
+	1    1575 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1775 4400 2    50   UnSpc ~ 0
++3V3
+Text GLabel 1775 4900 2    50   UnSpc ~ 0
+GND
+Text GLabel 1775 4800 2    50   Input ~ 0
+BUTTON
+Text GLabel 1775 4700 2    50   BiDi ~ 0
+TEMP
+Text GLabel 1775 4600 2    50   Output ~ 0
+SCL
+Text GLabel 1775 4500 2    50   BiDi ~ 0
+SDA
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5FD93E45
+P 3175 4075
+F 0 "H?" H 3275 4124 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3275 4033 50  0000 L CNN
+F 2 "" H 3175 4075 50  0001 C CNN
+F 3 "~" H 3175 4075 50  0001 C CNN
+	1    3175 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD984DB
+P 3175 4175
+F 0 "#PWR?" H 3175 3925 50  0001 C CNN
+F 1 "GND" H 3180 4002 50  0000 C CNN
+F 2 "" H 3175 4175 50  0001 C CNN
+F 3 "" H 3175 4175 50  0001 C CNN
+	1    3175 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5FD9A253
+P 3175 4600
+F 0 "H?" H 3275 4649 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3275 4558 50  0000 L CNN
+F 2 "" H 3175 4600 50  0001 C CNN
+F 3 "~" H 3175 4600 50  0001 C CNN
+	1    3175 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD9A259
+P 3175 4700
+F 0 "#PWR?" H 3175 4450 50  0001 C CNN
+F 1 "GND" H 3180 4527 50  0000 C CNN
+F 2 "" H 3175 4700 50  0001 C CNN
+F 3 "" H 3175 4700 50  0001 C CNN
+	1    3175 4700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

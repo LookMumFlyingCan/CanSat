@@ -193,15 +193,15 @@ Wire Wire Line
 Wire Wire Line
 	2450 2400 2150 2400
 Wire Wire Line
-	2450 2500 2150 2500
+	2450 3700 2150 3700
 Wire Wire Line
 	2450 2700 2150 2700
 Text Label 2450 2300 2    50   ~ 0
 GPIO_19
 Text Label 2450 2400 2    50   ~ 0
 GPIO_13
-Text Label 2450 2500 2    50   ~ 0
-GPIO_6
+Text Label 2450 3700 2    50   ~ 0
+GPIO_4
 Text Label 2450 2700 2    50   ~ 0
 GPIO_5
 $Comp
@@ -454,7 +454,6 @@ NoConn ~ 1150 3500
 NoConn ~ 2150 3300
 NoConn ~ 2150 3400
 NoConn ~ 2150 3500
-NoConn ~ 2150 3700
 NoConn ~ 2150 3800
 NoConn ~ 2150 3900
 NoConn ~ 2150 4100
@@ -494,13 +493,13 @@ F 3 "~" H 9400 5350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 8850 5050 0    50   ~ 0
-GPIO_5
+GPIO_4
 Wire Wire Line
 	8850 5050 9200 5050
 Wire Wire Line
 	8850 5150 9200 5150
 Text Label 8850 5150 0    50   ~ 0
-GPIO_6
+GPIO_5
 Wire Wire Line
 	8850 5250 9200 5250
 Wire Wire Line
@@ -758,4 +757,5 @@ F 3 "" H 9300 1800 50  0001 L BNN
 	1    9300 1800
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2150 2500
 $EndSCHEMATC

@@ -726,7 +726,6 @@ NoConn ~ 3450 3850
 NoConn ~ 3450 4050
 NoConn ~ 3450 4450
 NoConn ~ 3450 4550
-NoConn ~ 3450 4650
 NoConn ~ 3450 4950
 NoConn ~ 3450 5450
 NoConn ~ 3450 5750
@@ -761,7 +760,6 @@ F 3 "~" H 7500 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 3450 4850
-NoConn ~ 3450 4750
 Text Label 3750 3050 2    50   ~ 0
 SWDIO
 Text Label 3750 3150 2    50   ~ 0
@@ -1175,4 +1173,8 @@ Text HLabel 3450 1850 2    50   Output ~ 0
 BUZZER
 Text HLabel 1650 4550 0    50   Input ~ 0
 BUTTON
+Text HLabel 3450 4650 2    50   Input ~ 0
+ACC_INT2
+Text HLabel 3450 4750 2    50   Input ~ 0
+ACC_INT1
 $EndSCHEMATC
